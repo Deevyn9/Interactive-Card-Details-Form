@@ -33,6 +33,7 @@ main header .bg img {
   height: 100vh;
   position: absolute;
   width: 60%;
+  z-index: -1;
 }
 
 main header .bg .mobile {
@@ -41,6 +42,60 @@ main header .bg .mobile {
 
 main header .bg .desktop {
   display: block;
+}
+
+main header .cards {
+    position: relative; 
+    color: white;
+    width: 50vw;
+}
+
+main header .cards .card-one {
+    position: relative;
+    display: inline-block;
+    width: 85%;
+    height: 39vh;
+    top: 100px;
+    left: 100px;
+}
+
+main header .cards .card-one img {
+    position: absolute;
+}
+
+main header .cards .card-one img:nth-child(2) {
+    left: 20px;
+    top: 15px;
+}
+
+main header .cards .card-one h1 {
+    position: absolute;
+    top: 135px;
+    left: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+main header .cards .card-one .name-exp {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 392px;
+    top: 195px;
+    left: 20px;
+}
+
+main header .cards .card-two {
+    position: relative;
+    display: inline-block;
+    top: 100px;
+    left: 200px;
+}
+
+main header .cards .card-two .cvv {
+    position: absolute;
+    top: 45%;
+    right: 12%;
 }
 
 @media (max-width: 600px) {
