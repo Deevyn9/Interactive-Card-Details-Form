@@ -25,7 +25,7 @@ main {
 }
 
 main header {
-  width: 50vw;
+  width: 650px;
   position: relative;
 }
 
@@ -44,6 +44,75 @@ main header .bg .desktop {
   display: block;
 }
 
+main header .cards__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+main header .cards__container .card img {   
+    width: 100%;
+}
+
+ main header .cards__container .card {
+    position: relative;
+    border: 2px solid blue;
+}
+
+main header .cards__container .card.front {
+    left: 10px;
+    top: -40px;
+}
+
+main header .cards__container .card.back {
+    left: 22px;
+    top: 20px;
+}
+
+main header .cards__container .card .cvv {
+    position: absolute;
+    z-index: 500;
+    color: white;
+    top: 41%;
+    right: 12%;
+}
+
+@media (min-width: 320px) {
+    main header .cards__container {
+    max-width: 100%;
+    }
+    
+    main header .cards__container .card img {   
+    width: 300px;
+}   
+
+    main header .cards__container .card.front {
+    left: -6px;
+    top: -40px;
+}
+
+main header .cards__container .card.back {
+    left: 6px;
+    top: 20px;
+}
+}
+
+@media (min-width: 410px) {   
+    main header .cards__container .card.front {
+    left: 10px;
+    top: -40px;
+}
+
+    main header .cards__container .card.back {
+    left: 50px;
+    top: 20px;
+}   
+}
+
 @media (max-width: 1050px) {
   main {
     flex-direction: column;
@@ -55,11 +124,33 @@ main header .bg .desktop {
 
   main header .bg .mobile {
     display: block;
-    height: 30vh;
+    height: 150px;
     width: 100vw;
   }
 
   main header .bg .desktop {
     display: none;
   }
+}
+
+@media (min-width: 1050px) {
+    main header .cards__container {
+    display: flex;
+    flex-direction: column-reverse;
+     max-width: 300px;
+    }
+
+    main header .cards__container .card img {
+        width: 400px;
+    }
+
+    main header .cards__container .card.front {
+    top: 20vh;
+    left: 150px;
+    }
+
+    main header .cards__container .card.back {
+    top: 24vh;
+    left: 250px;
+}   
 }
