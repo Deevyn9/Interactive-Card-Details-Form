@@ -109,6 +109,59 @@ main header .cards__container .card .cvv {
     right: 12%;
 }
 
+main form {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form input {
+    height: 45px;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+main form .input__field {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+main form .input__field label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+main form .input__field .inputs {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+main form .input__field .inputs input {
+    width: 25%;
+}
+
+main form .input__field .inputs .cvv {
+    width: 40%;
+}
+
+main form button {
+    background: var(--Very-dark-violet);
+    color: var(--White);
+    border: none;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+}
+
 @media (min-width: 320px) {
     main header .cards__container {
     max-width: 100%;
@@ -137,18 +190,6 @@ main header .cards__container .card .cvv {
  }
 }
 
-@media (min-width: 410px) {   
-    main header .cards__container .card.front {
-    left: 10px;
-    top: -40px;
-}
-
-    main header .cards__container .card.back {
-    left: 50px;
-    top: 20px;
-}   
-}
-
 @media (max-width: 1050px) {
   main {
     flex-direction: column;
@@ -156,6 +197,7 @@ main header .cards__container .card .cvv {
 
   main header {
     width: 100vw;
+    border: 2px solid red;
   }
 
   main header .bg .mobile {
