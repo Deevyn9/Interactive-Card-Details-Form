@@ -60,7 +60,6 @@ main header .cards__container .card img {
 
  main header .cards__container .card {
     position: relative;
-    border: 2px solid blue;
 }
 
 main header .cards__container .card.front {
@@ -81,7 +80,7 @@ main header .cards__container .card.front .card__number {
     top: 60%;
     left: 15px;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 16.5px;
 }
 
 main header .cards__container .card.front .name-exp {
@@ -92,6 +91,9 @@ main header .cards__container .card.front .name-exp {
     color: white;
     position: absolute;
     top: 80%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 100;
 }
 
 main header .cards__container .card.back {
@@ -103,7 +105,7 @@ main header .cards__container .card .cvv {
     position: absolute;
     z-index: 500;
     color: white;
-    top: 43%;
+    top: 41%;
     right: 12%;
 }
 
@@ -125,6 +127,14 @@ main header .cards__container .card.back {
     left: 6px;
     top: 20px;
 }
+
+main header .cards__container .card.front .card__number {
+    font-size: 20px;
+}
+
+main header .cards__container .card .cvv {
+    top: 43%;
+ }
 }
 
 @media (min-width: 410px) {   
@@ -179,4 +189,16 @@ main header .cards__container .card.back {
     top: 24vh;
     left: 250px;
 }   
+
+main header .cards__container .card.front .card__number {
+    font-size: 25px;
+    top: 55%;
+}
+
+main header .cards__container .card.front .name-exp {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
 }
