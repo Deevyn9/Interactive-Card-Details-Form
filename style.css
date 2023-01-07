@@ -17,7 +17,7 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-}
+  }
 
 main {
   display: flex;
@@ -27,12 +27,14 @@ main {
 main header {
   width: 650px;
   position: relative;
+  top: 0;
 }
 
 main header .bg img {
   height: 100vh;
   position: absolute;
   width: 60%;
+  top: 0;
   z-index: -1;
 }
 
@@ -114,6 +116,7 @@ main form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 main form input {
@@ -156,6 +159,16 @@ main form .input__field .inputs {
 
 main form .input__field .inputs input {
     width: 25%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 main form .input__field .inputs .cvv {
@@ -209,7 +222,6 @@ main header .cards__container .card .cvv {
 
   main header {
     width: 100vw;
-    border: 2px solid red;
   }
 
   main header .bg .mobile {
@@ -224,6 +236,10 @@ main header .cards__container .card .cvv {
 }
 
 @media (min-width: 1050px) {
+    main {
+        justify-content: space-between;
+    }
+
     main header .cards__container {
     display: flex;
     flex-direction: column-reverse;
@@ -259,5 +275,15 @@ main header .cards__container .card.front .name-exp {
 main form {
     width: calc(100vw - 650px);
     display: flex;
+    position: relative;
+    top: 180px;
+}
+
+main form input {
+    margin-bottom: 10px;
+}
+
+main form .form__main {
+    width: 70%;
 }
 }
