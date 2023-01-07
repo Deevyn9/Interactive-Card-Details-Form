@@ -22,6 +22,7 @@ body {
 main {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 main header {
@@ -117,6 +118,12 @@ main form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    }
+
+main form .form__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main form input {
@@ -155,10 +162,26 @@ main form .input__field .inputs {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
-main form .input__field .inputs input {
-    width: 25%;
+main form .input__field .inputs .row-inputs {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+}
+
+main form .input__field .inputs .row-inputs.two {
+    width: 45%;
+}
+
+main form .input__field .inputs .row-inputs .double-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+main form .input__field .inputs .row-inputs .double-inputs input {
+    width: 48%;
 }
 
 input::-webkit-outer-spin-button,
@@ -171,9 +194,9 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-main form .input__field .inputs .cvv {
+/* main form .input__field .inputs .cvv {
     width: 40%;
-}
+} */
 
 main form button {
     background: var(--Very-dark-violet);
