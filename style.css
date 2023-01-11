@@ -194,10 +194,6 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-/* main form .input__field .inputs .cvv {
-    width: 40%;
-} */
-
 main form button {
     background: var(--Very-dark-violet);
     color: var(--White);
@@ -207,6 +203,36 @@ main form button {
     border-radius: 5px;
     margin-top: 10px;
     outline: none;
+    cursor: pointer;
+}
+
+main #complete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #complete h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+main #complete p {
+    margin-top: 5px;
+    color: var(--Dark-grayish-violet);
+    font-size: 18px;
+}
+
+main #complete button {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Very-dark-violet);
+    color: white;
     cursor: pointer;
 }
 
@@ -295,11 +321,16 @@ main header .cards__container .card.front .name-exp {
     letter-spacing: 1px;
 }
 
-main form {
+main form, main #complete {
     width: calc(100vw - 650px);
     display: flex;
     position: relative;
     top: 180px;
+}
+
+main #complete {
+    flex-direction: column;
+    align-items: center;
 }
 
 main form input {
