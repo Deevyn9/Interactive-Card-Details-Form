@@ -7,7 +7,6 @@
 }
 
 :root {
-  --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
   --Red: hsl(0, 100%, 66%);
   --White: hsl(0, 0%, 100%);
   --Light-grayish-violet: hsl(270, 3%, 87%);
@@ -133,10 +132,14 @@ main form input {
     padding: 10px;
     color: var(--Very-dark-violet);
     font-size: 18px;
+    outline: none;
 }
 
-main form input:active {
-    outline: solid var(--Very-dark-violet);
+main form input:focus {
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    border-radius: inherit;
+    border-image-slice: 1;
 }
 
 main form input::placeholder {
