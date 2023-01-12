@@ -161,6 +161,11 @@ main form .input__field label {
     font-weight: 700;
 }
 
+#nameerr, #cvverr, #numbererr, #dateerr {
+    color: var(--Red);
+    display: none;
+}
+
 main form .input__field .inputs {
     display: flex;
     max-width: 100%;
