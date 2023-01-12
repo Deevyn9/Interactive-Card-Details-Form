@@ -3,3 +3,7 @@ const cardName = document.getElementsByClassName("card__name");
 const expMonth = document.getElementsByClassName("month");
 const expYear = document.getElementsByClassName("year");
 const CVV = document.getElementsByClassName("cvv");
+const cvvErr = document.getElementById("cvverr");
+const cardNumberErr = document.getElementById("numbererr");
+const dateErr = document.getElementById("daterr");
+const nameErr = document.getElementById("nameerr");
