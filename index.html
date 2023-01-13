@@ -51,14 +51,14 @@
       </header>
 
       <section>
-        <form action="">
+        <form action="" id="form">
           <div class="form__main">
             <div class="input__field">
               <label for="name">CARDHOLDER NAME</label>
               <input
                 type="text"
                 name="name"
-                id=""
+                class="nameInput"
                 placeholder="e.g. Jane Appleseed"
               />
               <p id="nameerr">Can't be empty</p>
@@ -68,7 +68,7 @@
               <input
                 type="number"
                 name="card number"
-                id=""
+                class="numberInput"
                 placeholder="e.g. 1234 5678 9123 0000"
               />
               <p id="numbererr">Wrong format, numbers only</p>
@@ -78,37 +78,45 @@
                 <div class="row-inputs">
                   <label for="date">EXP. DATE (MM/YY)</label>
                   <div class="double-inputs">
-                  <input type="number" name="year" id="" placeholder="YY" />
-                  <input type="number" name="month" id="" placeholder="MM" />
-                </div>
-                <p id="dateerr">Can't be blank</p>
+                    <input
+                      type="number"
+                      name="month"                  
+                      placeholder="MM"
+                      class="input__month"
+                    />
+                    <input
+                      type="number"
+                      name="year"
+                      placeholder="YY"
+                      class="input__year"
+                    />
+                  </div>
+                  <p id="dateerr">Can't be blank</p>
                 </div>
                 <div class="row-inputs two">
                   <label for="cvv">CVV</label>
                   <input
                     type="number"
                     name="cvv"
-                    id=""
                     placeholder="e.g. 123"
-                    class="cvv"
+                    class="cvvInput"
                   />
                   <p id="cvverr">Can't be blank</p>
                 </div>
               </div>
             </div>
-            <button>Confirm</button>
+            <button class="confirm__btn">Confirm</button>
           </div>
         </form>
       </section>
 
-      <section id="complete"  style="
-      display: none;">
-          <div class="check__img">
-            <img src="./images/icon-complete.svg" alt="complete">
-          </div>
-          <h2>THANK YOU!</h2>
-            <p>we've added your card details</p>
-            <button>Continue</button>
+      <section id="complete" style="display: none">
+        <div class="check__img">
+          <img src="./images/icon-complete.svg" alt="complete" />
+        </div>
+        <h2>THANK YOU!</h2>
+        <p>we've added your card details</p>
+        <button class="continue">Continue</button>
       </section>
 
       <!-- <div class="attribution">
